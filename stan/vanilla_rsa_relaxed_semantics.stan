@@ -15,12 +15,13 @@ data {
   real<lower=0> alpha;
   real<lower=0> cost_weight;
 
+  real<lower=0,upper=1> x_size;
+  real<lower=0,upper=1> x_color;
 
 }
 
 parameters {
-real<lower=0,upper=1> x_size;
-  real<lower=0,upper=1> x_color;
+
 }
 
 transformed parameters {
@@ -50,4 +51,5 @@ model {
 }
 
 generated quantities {
+
 }
